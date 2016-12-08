@@ -120,7 +120,7 @@ public class ShoppingListItemController {
 			ShoppingListItem i = shoppingListItemRepo.findOne(itemid);
 			model.addAttribute("shoppingListItem", i);
 			model.addAttribute("shoppingList", shoppingListRepo.findOne(id));
-			return "shoppinglistItem/shoppingListItemDelete";
+			return "shoppingListItem/shoppingListItemDelete";
 		}
 
 		// deletes the product after submit is pressed
@@ -145,7 +145,7 @@ public class ShoppingListItemController {
 			ShoppingList l = shoppingListRepo.findOne(id);
 			model.addAttribute("shoppingList", l);
 			model.addAttribute("shoppingListItems", l.getShoppingListItems());
-			return "shoppinglistItem/shoppingListItemDeleteChecked";
+			return "shoppingListItem/shoppingListItemDeleteChecked";
 		}
 
 		// deletes the product after submit is pressed
