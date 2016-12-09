@@ -51,6 +51,11 @@ public class UserController {
 	public String register(Model model) {
 		return createUser(model);
 	}
+	
+	@RequestMapping("/login")
+	public String error(){
+		return "error";
+	}
 
 	@RequestMapping("/users")
 	public String listUsers(Model model) {
